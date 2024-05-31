@@ -77,19 +77,24 @@ const texto = document.querySelector('#texto')
 let numeros = document.querySelectorAll('.numero');
 let btnAccion = document.querySelectorAll('.accion')
 let primerNumero = 0;
+let numeroMult;
 let segundoNumero = 0;
 let acumulador = 0;
-let resultadoResta = 0;
-let resultadoDivision = 0;
-let resultadoMultiplicar = 0;
+let opera;
+let resultado;
+let resultado3 = 1;
 let signo = '';
+let primeraVez = true;
+let re = 0;
+
 
 btnC.addEventListener('click', () => {
-    texto.value = ''
+    texto.value = '';
     segundoNumero = 0;
     primerNumero = 0;
     acumulador = 0;
-    signo = ''
+    resultado = 0;
+     signo = ''
 })
 
 // es un bucle que permite recorrer estructuras que contienen varios elementos que serian 10
@@ -98,6 +103,7 @@ numeros.forEach((btn) => {
 
     btn.addEventListener('click', () => {
         texto.value += btn.value
+        console.log(btn.value)
 
     });
 });
@@ -105,11 +111,43 @@ numeros.forEach((btn) => {
 btnAccion.forEach((btn) => {
     btn.addEventListener('click', (e) => {
 
-
         if (e.target.value == '+' || e.target.value == '-' ||
             e.target.value == '/' || e.target.value == '*') {
-            primerNumero = parseInt(texto.value)
-            acumulador += primerNumero
+                
+                primerNumero = parseInt(texto.value)
+            switch (e.target.value) {
+                case '+':
+                    acumulador += primerNumero
+                    break;
+                case '-':
+                    if (primeraVez) {
+                        acumulador = primeraVez + primerNumero
+                        primeraVez = false;
+                    } else if (acumulador >= 0) {
+                        acumulador = Math.abs(acumulador) - primerNumero
+                    } else {
+                        acumulador = acumulador - Math.absprimerNumero
+                    }
+                    break;
+                case '*':
+
+                    resultado3 = resultado3 * primerNumero
+
+
+                    break;
+                case '/':
+                    if(primeraVez){
+                        acumulador = primerNumero + acumulador
+                        primeraVez = false
+                    }else{
+                        acumulador = acumulador / primerNumero
+                    }
+
+                    break;
+
+
+            }
+
             texto.value = ''
             signo = e.target.value
 
@@ -124,21 +162,28 @@ btnAccion.forEach((btn) => {
                 texto.value = resultado
             }
             else if (signo == '-') {
+                
                 segundoNumero = parseInt(texto.value)
-                let resultado = primerNumero - segundoNumero
+                let resultado = acumulador - segundoNumero
                 texto.value = resultado
+                
 
             } else if (signo == '/') {
                 segundoNumero = parseInt(texto.value)
-                let resultado = acumulador / segundoNumero
+                resultado = acumulador / segundoNumero
                 texto.value = resultado
+                primeraVez = true
 
             } else if (signo == '*') {
+                
                 segundoNumero = parseInt(texto.value)
-                let resultado = acumulador * segundoNumero
+                let resultado = resultado3 * segundoNumero
+                
                 texto.value = resultado
             }
             acumulador = 0;
+            resultado3 = 1;
+
         }
 
 
