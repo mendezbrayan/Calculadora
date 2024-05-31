@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+</head>
+
+<body>
+   
+    <div class="form-check form-switch btn-flotante">
+        <input id="btn-cambiar"  class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault"><b>Cambiar tema</b></label>
+      </div>
+   
+
+    <div id="cambio" class="contenedor">
+
+        <div id="calculadora2" class="calculadora">
+            <input type="text" id="texto"  readonly class="texto1">
+            <!-- <div id="calculos" class="texto" ></div> -->
+
+            <div class="contenedor-de-dos-box">
+
+                <div class="numeros" >
+                    <!-- limpiar-pantalla -->
+                    <button id="color-c" value="C" class="btn-C">
+                        C
+                    </button>
+                    <!-- borrar-un-numero-o-mas -->
+                    <button id="color-delete" value="←"  class="delete">
+                         
+                         <h1>←</h1>
+                    </button>
+                    <button value="7" id="b7" class="numero boton1">
+                        7
+                    </button>
+                    <button value="8" id="b8" class="numero boton1">
+                        8
+                    </button>
+                    <button value="9" id="b9" class="numero  boton1 ">
+                        9
+                    </button>
+                    <button value="4" id="b4" class="numero  boton1">
+                        4
+                    </button>
+                    <button value="5" id="b5" class="numero  boton1">
+                        5
+                    </button>
+                    <button value="6" id="b6" class="numero  boton1">
+                        6
+                    </button>
+                    <button value="1" id="b1" class="numero  boton1">
+                        1
+                    </button> 
+                    <button value="2" id="b2" class="numero  boton1">
+                        2
+                    </button>
+                    <button value="3" id="b3" class="numero  boton1">
+                        3
+                    </button>
+                    <button value="0" id="b0" class="numero  boton1">0</button>
+                    <button id="color-punto" value="." class="operadores">
+                        <h3>.</h3>
+                    </button>
+                    <!-- resultado -->
+                    <button value="=" id="btn-color0" class="btn-resultado operadores accion">=</button>
+
+                </div>
+
+                <div class="contenedor-de-operadores">
+                    <button id="btn-color1" class="operadores accion" value="/">
+                        <h1>÷</h1>
+                    </button>
+                    <button id="btn-color2" class="operadores accion" value="*">
+                        *
+                    </button>
+                    <button id="btn-color3" class="operadores accion" value="-">
+                        <h1>-</h1>
+                    </button>
+                    <button id="btn-color4" class="operadores accion" value="+">
+                        +
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="./calculadora.js"></script>
+</body>
+
+</html>
