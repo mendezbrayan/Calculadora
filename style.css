@@ -1,13 +1,13 @@
-
 .btn-flotante {
-  position: fixed;
-  left: 30px;
-  top: 30px;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
+
 /* tema 2 */
-.tema2-contenedor{
+.tema2-contenedor {
     z-index: 1px;
     display: flex;
     justify-content: center;
@@ -18,10 +18,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .calculadora2 {
     border: 5px solid rgb(219, 28, 108);
     padding: 30px 20px 30px 20px;
-    background-color: #e27db8;
+    background-color: #ffffff;
     height: 620px;
     width: 420px;
     border-radius: 15px;
@@ -32,7 +33,7 @@
 .texto2 {
 
     padding-left: 15px;
-    border: 8px solid rgb(187, 34, 60);
+    border: 10px solid rgb(187, 34, 60);
     border-radius: 10px;
     background-color: #c79cc1;
     max-width: 340px;
@@ -43,6 +44,7 @@
     color: rgb(255, 255, 255);
     margin: 15px 15px 40px 15px;
 }
+
 .boton2 {
     background: linear-gradient(rgb(202, 64, 214), rgb(226, 109, 201), white);
     box-shadow: 0px 5px 10px 0px #535151;
@@ -56,7 +58,9 @@
     border-radius: 5px;
     transform: scale(1.0);
 
-}.boton2:hover {
+}
+
+.boton2:hover {
     background: linear-gradient(rgb(202, 64, 214), rgb(226, 109, 201), white);
     box-shadow: 0px 5px 10px 0px #535151;
     border: none;
@@ -69,6 +73,7 @@
     border-radius: 5px;
     transform: scale(0.9);
 }
+
 .operadores2 {
     transform: scale(1.0);
 
@@ -82,8 +87,9 @@
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    background: linear-gradient(rgb(170, 14, 105), rgb(187, 15, 115),rgb(186, 68, 197));
+    background: linear-gradient(rgb(170, 14, 105), rgb(187, 15, 115), rgb(186, 68, 197));
 }
+
 .operadores2:hover {
     transform: scale(0.9);
 
@@ -97,9 +103,10 @@
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    background: linear-gradient(rgb(166, 28, 179), rgb(139, 14, 101),rgb(224, 63, 216));
+    background: linear-gradient(rgb(166, 28, 179), rgb(139, 14, 101), rgb(224, 63, 216));
 }
-.delete2{
+
+.delete2 {
     padding-top: 8px;
     box-shadow: 0px 5px 10px 2px rgb(120, 121, 121);
     border: none;
@@ -110,10 +117,11 @@
     width: 80px;
     height: 60px;
     border-radius: 5px;
-    background: linear-gradient(rgb(138, 54, 207), rgb(198, 68, 238),rgb(216, 89, 216));
+    background: linear-gradient(rgb(138, 54, 207), rgb(198, 68, 238), rgb(216, 89, 216));
     transform: scale(1.0);
 }
-.delete2:hover{
+
+.delete2:hover {
     padding-top: 8px;
     box-shadow: 0px 5px 10px 2px rgb(124, 125, 126);
     border: none;
@@ -124,16 +132,17 @@
     width: 80px;
     height: 60px;
     border-radius: 5px;
-    background: linear-gradient(rgb(141, 15, 199), rgb(162, 86, 197),rgb(154, 65, 189));
+    background: linear-gradient(rgb(141, 15, 199), rgb(162, 86, 197), rgb(154, 65, 189));
     transform: scale(0.9);
 }
+
 .btn-C2 {
     box-shadow: 0px 5px 10px 0px rgb(27, 27, 27);
     border: none;
     width: 130px;
     height: 60px;
     border-radius: 10px;
-    background: linear-gradient(rgb(192, 5, 130),rgb(223, 6, 125),white);
+    background: linear-gradient(rgb(192, 5, 130), rgb(223, 6, 125), white);
     color: white;
     display: flex;
     justify-content: center;
@@ -141,6 +150,7 @@
     transform: scale(1.0);
 
 }
+
 .btn-C2:hover {
     transform: scale(0.9);
     box-shadow: 0px 5px 10px 0px rgb(27, 27, 27);
@@ -148,7 +158,7 @@
     width: 130px;
     height: 60px;
     border-radius: 10px;
-    background: linear-gradient(rgb(192, 5, 120),rgb(211, 32, 166),white);
+    background: linear-gradient(rgb(192, 5, 120), rgb(211, 32, 166), white);
     color: white;
     display: flex;
     justify-content: center;
@@ -171,8 +181,9 @@
 }
 
 .calculadora {
+    border: 5px solid rgb(240, 240, 240);
     padding: 30px 20px 30px 20px;
-    background-color: #f0eeee;
+    background-color: #131212;
     height: 620px;
     width: 420px;
     border-radius: 15px;
@@ -191,9 +202,9 @@
 }
 
 .texto1 {
-
     padding-left: 15px;
-    border: 8px solid rgb(24, 18, 18);
+    border: 8px solid white;
+    border-radius: 20px;
     background-color: #9198a1;
     max-width: 340px;
 
@@ -214,8 +225,9 @@
 }
 
 .boton1 {
-    background: linear-gradient(rgb(87, 86, 86), rgb(124, 122, 122), white);
-    box-shadow: 0px 5px 10px 0px #535151;
+    background-color: white;
+    box-shadow: 0px 5px 10px 0px rgb(158, 36, 36);
+
     border: none;
     color: rgb(39, 37, 37);
     display: flex;
@@ -230,8 +242,9 @@
 
 .boton1:hover {
     transform: scale(0.9);
-    background: linear-gradient(rgb(87, 86, 86), rgb(124, 122, 122), white);
-    box-shadow: 0px 5px 10px 0px #535151;
+    background-color: white;
+    box-shadow: 0px 5px 10px 0px rgb(185, 44, 44);
+
     border: none;
     color: rgb(39, 37, 37);
     display: flex;
@@ -256,7 +269,8 @@
     transform: scale(1.0);
 
     padding-top: 8px;
-    box-shadow: 0px 5px 10px 2px rgb(81, 84, 85);
+    box-shadow: 0px 5px 10px 3px rgb(70, 69, 68);
+
     border: none;
     display: flex;
     align-items: center;
@@ -265,13 +279,15 @@
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0),rgb(255, 255, 255));
+    background-color: orange;
 }
+
 .operadores:hover {
     transform: scale(0.9);
 
     padding-top: 8px;
-    box-shadow: 0px 5px 10px 2px rgb(81, 84, 85);
+    box-shadow: 0px 5px 10px 0px rgb(27, 27, 27);
+
     border: none;
     display: flex;
     align-items: center;
@@ -280,62 +296,66 @@
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0),rgb(255, 255, 255));
+    background-color: orange;
 }
+    .btn-C {
+        box-shadow: 0px 5px 10px 0px rgb(49, 52, 197);
+        border: none;
+        width: 130px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1.0);
 
-.btn-C {
-    box-shadow: 0px 5px 10px 0px rgb(27, 27, 27);
-    border: none;
-    width: 130px;
-    height: 60px;
-    border-radius: 10px;
-    background: linear-gradient(rgb(192, 5, 5),rgb(194, 6, 6),white);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1.0);
+    }
 
-}
-.btn-C:hover {
-    transform: scale(0.9);
-    box-shadow: 0px 5px 10px 0px rgb(27, 27, 27);
-    border: none;
-    width: 130px;
-    height: 60px;
-    border-radius: 10px;
-    background: linear-gradient(rgb(192, 5, 5),rgb(194, 6, 6),white);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .btn-C:hover {
+        transform: scale(0.9);
+        box-shadow: 0px 5px 10px 0px rgb(21, 67, 194);
+        border: none;
+        width: 130px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.delete{
-    padding-top: 8px;
-    box-shadow: 0px 5px 10px 2px rgb(81, 84, 85);
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    width: 80px;
-    height: 60px;
-    border-radius: 5px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0),rgb(255, 255, 255));
-    transform: scale(1.0);
-}
-.delete:hover{
-    padding-top: 8px;
-    box-shadow: 0px 5px 10px 2px rgb(81, 84, 85);
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    width: 80px;
-    height: 60px;
-    border-radius: 5px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0),rgb(255, 255, 255));
-    transform: scale(0.9);
-}
+    .delete {
+        padding-top: 8px;
+        box-shadow: 0px 5px 10px 0px rgb(49, 52, 197);
+
+
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        width: 80px;
+        height: 60px;
+        border-radius: 5px;
+        background-color: red;
+        transform: scale(1.0);
+    }
+
+    .delete:hover {
+        padding-top: 8px;
+        box-shadow: 0px 5px 10px 0px rgb(49, 52, 197);
+
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        width: 80px;
+        height: 60px;
+        border-radius: 5px;
+        background-color: red;
+        transform: scale(0.9);
+    }
